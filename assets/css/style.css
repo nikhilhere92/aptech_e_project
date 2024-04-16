@@ -1,19 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
 }
+h1{
+    font-family: "Ubuntu", sans-serif;
+}
+.swiper {
+    height: 100vh !important;
+  }
+  .swiper-pagination-bullet{
+    width: 25px !important;
+    height: 25px !important;
+    background-color: rgb(66, 152, 239) !important;
+    border: 1px solid rgb(66, 152, 239);
+  }
 header{
-    height: 100vh;
+    min-height: 100vh;
 }
-/* .bg2{
+.bg2{
     background-image: url('/assets/img/pattern-2.png');
     background-repeat: no-repeat;
 }
 .bg1{
-    background-image: url('/assets/img/pattern-1.png');
+    background-image: url('/assets/img/pattern-5.png');     
     background-repeat: no-repeat;
-} */
+} 
+.btn-main{
+    background-color: rgb(66, 152, 239) !important;
+    color: white;
+    transition: 0.20s all ease-in;
+}
+.btn-main:hover{
+    background-color: white !important;
+    color: rgb(66, 152, 239) !important;
+    transition: 0.20s all ease-in;
+}
 .main-text{
     color: rgb(66, 152, 239);
 }
@@ -31,4 +56,7 @@ header{
 .navbar-nav li>a:hover{
     color: rgb(66, 152, 239) !important;
     transition: 0.5 all;
+}
+.hero h1{
+    font-size: 50px !important;
 }
