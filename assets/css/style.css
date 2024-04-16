@@ -60,3 +60,33 @@ header{
 .hero h1{
     font-size: 50px !important;
 }
+.btn-ins{
+    background-color: rgb(66, 152, 239) !important;
+    color: #fff;
+    transition: all 0.5s;
+
+}
+.btn-ins:hover{
+    transition: all 0.5s;
+    background-color: #fff !important;
+    color: rgb(66, 152, 239) !important;
+    border: 1px solid rgb(66, 152, 239) !important;
+
+}
+.row .active{
+    background-color: #fff !important;
+    color: rgb(66, 152, 239) !important;
+    
+    border: 1px solid rgb(66, 152, 239) !important;
+}
+#ins-card .col-lg-4{
+    display: none;
+}
+#ins-card .col-lg-4 img{
+    height: 300px;
+    object-fit: cover;
+}
+#ins-card .card-body{
+    background-color: rgb(66, 152, 239) !important;
+    color: #fff;
+}
