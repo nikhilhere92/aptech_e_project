@@ -1,0 +1,22 @@
+*{
+    margin: 0%    ;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+.back-image{
+    height: 100px !important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header{
+    height: 100vh !important;
+    background-image: url(https://handlavet.qodeinteractive.com/wp-content/uploads/2019/02/main-home-slider-image-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
