@@ -191,8 +191,8 @@
         </div>
 
         <div
-          class="mx-5 mt-2 row align-items-center justify-content-center gy-5 d-none"
-          id="ins-comp">
+          class="mx-5 mt-2 row align-items-center justify-content-center gy-5"
+          id="ins-comp" style="display: none;">
           <div class="col-md-3">
             <button class="btn btn-ins w-75" onclick="showInsCard('zurich')">Zurich</button>
           </div>
@@ -206,7 +206,7 @@
             <button class="btn btn-ins w-75"  onclick="showInsCard('yamaha')">Yamaha</button>
           </div>
         </div>
-        <div class="row m-5 safe-carz gy-5" id="ins-card">
+        <div class="row mx-5 mt-3 safe-carz gy-5" id="ins-card">
             <div class="col-lg-4">
                 <div class="card rounded ">
                     <img class="card-img-top img-fluid" src="https://cdn.pixabay.com/photo/2020/01/20/20/39/car-4781370_1280.jpg" alt="Title" />
@@ -241,7 +241,7 @@
                 
             </div>
         </div>
-        <div class="row m-5 zurich gy-5" id="ins-card">
+        <div class="row mx-5 mt-3 zurich gy-5" id="ins-card">
             <div class="col-lg-4">
                 <div class="card rounded ">
                     <img class="card-img-top img-fluid" src="https://cdn.pixabay.com/photo/2019/07/13/22/03/its-4335837_640.jpg" alt="Title" />
@@ -276,7 +276,7 @@
                 
             </div>
         </div>
-        <div class="row m-5 toyota gy-5" id="ins-card">
+        <div class="row mx-5 mt-3 toyota gy-5" id="ins-card">
             <div class="col-lg-4">
                 <div class="card rounded ">
                     <img class="card-img-top img-fluid" src="https://cdn.pixabay.com/photo/2023/12/13/07/58/car-8446529_640.jpg" alt="Title" />
@@ -311,7 +311,7 @@
                 
             </div>
         </div>
-        <div class="row m-5 yamaha gy-5" id="ins-card">
+        <div class="row mx-5 mt-3 yamaha gy-5" id="ins-card">
             <div class="col-lg-4">
                 <div class="card rounded ">
                     <img class="card-img-top img-fluid" src="https://cdn.pixabay.com/photo/2018/02/12/02/05/motorcycle-3147278_640.jpg" alt="Title" />
@@ -397,11 +397,15 @@
         $('#ins-cat button').click(function(){
             $('#ins-cat button').removeClass('active')
             $(`#ins-card .col-lg-4`).hide(1000)
-            $('#ins-comp').removeClass('d-none')
+            $('#ins-comp').hide(500)
+            $('#ins-comp').show(500)
+            // $('#ins-comp').removeClass('d-none')
+          $('#ins-comp button').removeClass('active')
             $(this).addClass('active')
         })
         $('#ins-comp button').click(function(){
-
+          $('#ins-comp button').removeClass('active')
+          $(this).addClass('active')
         })
       })
       function showInsCard(id){
