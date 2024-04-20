@@ -5,18 +5,24 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 h1{
     font-family: "Ubuntu", sans-serif;
 }
+
 .swiper {
     height: 100vh !important;
   }
+  /* .swiper-pagination-bullet{
+    width: 25px !important;
+    height: 25px !important;
+    background-color: #fff !important;
+    border: 1px solid rgb(66, 152, 239);
+  } */
   .swiper-pagination-bullet{
     width: 25px !important;
     height: 25px !important;
-    background-color: rgb(66, 152, 239) !important;
-    border: 1px solid rgb(66, 152, 239);
   }
 header{
     min-height: 100vh;
@@ -89,4 +95,175 @@ header{
 #ins-card .card-body{
     background-color: rgb(66, 152, 239) !important;
     color: #fff;
+}
+
+.ins{
+}
+
+
+
+
+
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* opacity: 0.3; */
+    background: linear-gradient(to right, rgba(109, 180, 242, 0.678), rgba(109, 180, 242, 0.33)),url(https://cdn.pixabay.com/photo/2016/12/17/20/05/building-1914309_1280.jpg) !important;
+    /* background-color: ; */
+    background-size: cover;
+    /* linear-gradient(to right, rgba(109, 179, 242, .6), rgba(109, 179, 242, .6)), */
+
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+
+
+}
+
+.contact .content p {
+    font-weight: 300;
+    color: white;
+}
+
+.container-contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.container-contact .contactinfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-contact .contactinfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container-contact .contactinfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container-contact .contactinfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container-contact .contactinfo .box .text h3 {
+    font-weight: 500;
+    color: rgb(123, 181, 239);
+
+}
+
+.contactform {
+    width: 40%;
+    padding: 40px;
+    background: white;
+}
+
+.contactform h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+
+}
+
+.contactform .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactform .inputbox input,
+.contactform .inputbox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactform .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+
+}
+
+.contactform .inputbox input:focus~span,
+.contactform .inputbox input:valid~span,
+.contactform .inputbox textarea:focus~span,
+.contactform .inputbox textarea:valid~span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactform .inputbox input[type="submit"] {
+    width: 100px;
+    background: rgb(66, 152, 239);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+@media (max-width: 991px) {
+    .contact {
+        padding: 50px;
+    }
+
+    .container-contact {
+        flex-direction: column;
+    }
+
+    .container-contact .contactinfo {
+        margin-bottom: 40px;
+    }
+
+    .container-contact .contactinfo,
+    .contactform {
+        width: 100%;
+    }
 }
